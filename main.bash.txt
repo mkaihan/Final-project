@@ -1,0 +1,14 @@
+# the codes run in raspbery pi
+
+sudo apt update
+sudo apt upgrade
+
+# this code install the cec-utils package
+sudo apt install cec-utils
+
+# Scan for HDMI-CEC capable devices by running the following command on your Raspberry Pi.
+
+echo 'scan' | cec-client -s -d 1
+
+
+
