@@ -10,5 +10,13 @@ sudo apt install cec-utils
 
 echo 'scan' | cec-client -s -d 1
 
+# Once you have either the device number or device address, you can begin to send commands to it.
+# Using the cec-client to turn on your device is a relatively easy process.
 
 
+echo 'on <DEVICEADDRESS>' | cec-client -s -d 1
+
+
+# For example, if we wanted to turn on our samsung TV that has the address of “0.0.0.0“, we would make use of the command like below.
+
+echo 'on 0.0.0.0' | cec-client -s -d 1
